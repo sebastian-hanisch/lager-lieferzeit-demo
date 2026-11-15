@@ -108,6 +108,17 @@ Weiter unten: die **Kernfrage** mit Verdikt, fünf Experimente (🔬), der Absch
 """
 )
 
+# erklaerseite:einfach:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/lieferzeit-erklaert.json, nicht von Hand ändern)
+with st.expander("💬 In einfachen Worten"):
+    st.markdown(
+        """
+Stellen Sie sich ein Lager vor, das jede Periode einen festen Anteil des Fehlbestands nachbestellt, während die Ware **L Perioden** unterwegs ist. Die Regel sieht nur, was im Lager liegt, nicht die Ware auf dem Weg, und bestellt deshalb zu viel nach: Der Bestand schwingt um den Sollwert (Deutung, nicht gemessen). Ab einer **Grenze für die Anpassung** klingt ein Bedarfsstoß nicht mehr ab, und je länger die Lieferzeit, desto kleiner ist diese Grenze. Knapp unter der Grenze kehrt der Bestand nur langsam zurück, die Grenze ist also keine gute Einstellung. Die Demo rechnet das in einem einfachen Modell nach (feste Lieferzeit, kein Meldeverzug, keine Klemmung der Bestellung) und misst Grenze, Abklingzeit und Summenregeln. Über echte Lager sagt sie nichts.
+
+[Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/lieferzeit-erklaert.html)
+        """
+    )
+# erklaerseite:einfach:end
+
 with st.expander("So funktioniert das Lager", expanded=True):
     st.markdown(
         """
@@ -276,6 +287,24 @@ st.markdown(
 st.markdown("---")
 
 with st.expander("📐 Mathematische Formulierung"):
+    # erklaerseite:lesehilfe:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/lieferzeit-erklaert.json, nicht von Hand ändern)
+    st.markdown(
+        r"""
+**Lesehilfe.** Gegeben sind die Lieferzeit $L \ge 1$ (Perioden), die Anpassung $\alpha > 0$ und ein Bedarfsstoß; gesucht sind die Bedingung, unter der der Bestand zum Soll zurückkehrt, und die Zeit dafür.
+
+| Symbol | Bedeutung |
+|---|---|
+| $i_t$ | Bestand minus Soll in Periode $t$ ($i_t = 0$ für $t \le 0$) |
+| $u_t$ | Bestellung minus Mittelbedarf in Periode $t$ |
+| $e_t$ | Bedarfsabweichung in Periode $t$ (Stoß: $e_0 = 1$, sonst 0) |
+| $L$, $\alpha$ | Lieferzeit in Perioden, Anpassung |
+| $P(z)$, $\rho$ | charakteristisches Polynom, größter Wurzelbetrag |
+| $\alpha_{krit}$, $\alpha^*$ | Stabilitätsgrenze, Anpassung der Doppelwurzel |
+
+[Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/lieferzeit-erklaert.html#fachleute)
+        """
+    )
+    # erklaerseite:lesehilfe:end
     st.markdown(
         r"""
 **Gegeben und gesucht.** Gegeben sind die Lieferzeit $L \ge 1$ (Perioden), die Anpassung $\alpha > 0$ und ein Bedarfsstoß; gesucht sind die Bedingung, unter der der Bestand zum Soll zurückkehrt, und die Zeit dafür.
