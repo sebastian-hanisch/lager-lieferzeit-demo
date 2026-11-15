@@ -1,7 +1,6 @@
 # Ein Lager, eine Regel, eine Lieferzeit – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-lager-lieferzeit-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-lager-lieferzeit-demo.streamlit.app/)**
 
 Stück 1 der Linie **Rückkopplung und Verzögerung** in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“. Es ist die Wurzel der Linie und zugleich die lineare Hälfte zur
 Schwesterlinie Dynamische Systeme: [`lager-chaos-demo`](https://github.com/sebastian-hanisch/lager-chaos-demo) benutzt dasselbe Lager (ohne Leitungsgewicht) mit Klemmung und misst Chaos; die Grenze α_krit = 2 sin(π/(4L − 2)) und die Periode 4L − 2 sind dort nur
