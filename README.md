@@ -4,7 +4,7 @@
 
 Stück 1 der Linie **Rückkopplung und Verzögerung** in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“. Es ist die Wurzel der Linie und zugleich die lineare Hälfte zur
 Schwesterlinie Dynamische Systeme: [`lager-chaos-demo`](https://github.com/sebastian-hanisch/lager-chaos-demo) benutzt dasselbe Lager (ohne Leitungsgewicht) mit Klemmung und misst Chaos; die Grenze α_krit = 2 sin(π/(4L − 2)) und die Periode 4L − 2 sind dort nur
-Ausgangspunkt und Testwerte. Hier kommt die **lineare** Hälfte: Stoßantwort, Abklingzeit, welches α unterhalb der Grenze gut ist, Summenregeln. Die stetige Gleichung mit Verzögerung rechnet die
+Ausgangspunkt und Testwerte. Hier kommt die **lineare** Hälfte: Stoßantwort, Abklingzeit, welches α unterhalb der Grenze gut ist, Summenregeln. Die stetige Delay-Differentialgleichung (DDE) rechnet die
 [`verzoegerung-hopf-demo`](https://github.com/sebastian-hanisch/verzoegerung-hopf-demo); hier steht nur die Brücke dorthin. Nachbarn in der Linie: [`leitung-mitrechnen-demo`](https://github.com/sebastian-hanisch/leitung-mitrechnen-demo) (Leitungsgewicht β),
 [`meldeverzug-demo`](https://github.com/sebastian-hanisch/meldeverzug-demo) (Meldeverzug s), [`streuende-lieferzeit-demo`](https://github.com/sebastian-hanisch/streuende-lieferzeit-demo) (streuende Lieferzeit) und
 [`frequenzgang-lager-demo`](https://github.com/sebastian-hanisch/frequenzgang-lager-demo) (Saison und Rauschen). Das Lager ist exakt das Euler-Schema mit m = L − 1 Schritten je Verzögerung; die Rechnung dazu ist Befund B4 der `verzoegerung-hopf-demo`, hier nur ein Verweis.

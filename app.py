@@ -279,7 +279,7 @@ st.markdown(
 | **Feste Lieferzeit** | Streut die Lieferzeit, gilt die Grenze dieser Demo nicht; sie ändert sich. | [`streuende-lieferzeit-demo`](https://github.com/sebastian-hanisch/streuende-lieferzeit-demo) |
 | **Nur Stoß und Dauerverschiebung** | Saison, Rampe und Rauschen sind nicht gemessen (die Summenregeln sind die Verstärkung bei Frequenz 0). | [`frequenzgang-lager-demo`](https://github.com/sebastian-hanisch/frequenzgang-lager-demo) |
 | **Keine Klemmung** | Die Bestellung darf negativ werden. Mit der Klemmung (Bestellung ≥ 0) gibt es hinter der Grenze Grenzzyklen und je nach α und L Chaos. | [`lager-chaos-demo`](https://github.com/sebastian-hanisch/lager-chaos-demo) |
-| **Diskrete Perioden** | Die stetige Gleichung hat a·τ = π/2 als Grenze; die Brücke steht in Experiment 5. | [`verzoegerung-hopf-demo`](https://github.com/sebastian-hanisch/verzoegerung-hopf-demo) |
+| **Diskrete Perioden** | Die stetige Delay-Differentialgleichung (DDE) hat a·τ = π/2 als Grenze; die Brücke steht in Experiment 5. | [`verzoegerung-hopf-demo`](https://github.com/sebastian-hanisch/verzoegerung-hopf-demo) |
 | **Rechnerische Grenzen** | An der Doppelwurzel α* verlieren Eigenwertlöser etwa 8 Stellen (Jordan-Block); α wird nie auf eine Zweierpotenz voreingestellt. | – |
 """
 )
@@ -298,7 +298,7 @@ with st.expander("📐 Mathematische Formulierung"):
 | $u_t$ | Bestellung minus Mittelbedarf in Periode $t$ |
 | $e_t$ | Bedarfsabweichung in Periode $t$ (Stoß: $e_0 = 1$, sonst 0) |
 | $L$, $\alpha$ | Lieferzeit in Perioden, Anpassung |
-| $P(z)$, $\rho$ | charakteristisches Polynom, größter Wurzelbetrag |
+| $P(z)$, $\rho$ | charakteristisches Polynom, Spektralradius (größter Wurzelbetrag) |
 | $\alpha_{krit}$, $\alpha^*$ | Stabilitätsgrenze, Anpassung der Doppelwurzel |
 
 [Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/lieferzeit-erklaert.html#fachleute)
